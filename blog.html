@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important FAQ page </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- colors link -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                
+                primary: 'rgba(186, 252, 100, 1)',
+                secondary:'rgba(249, 247, 243, 1)',
+              }
+            }
+          }
+        }
+      </script>
+
+
+</head>
+<body>
+    
+
+   
+  <header>
+
+
+
+    <div class="navbar bg-[#F9F7F3] top-0 z-50 backdrop-blur-sm bg-opacity-80 ">
+
+
+        <div class="navbar-start">
+            
+            <a href="index.html"><button class="btn btn-active btn-accent">Home</button></a>
+        </div>
+
+
+        <div class="navbar-center ">
+          
+
+            <button class="btn hidden lg:block ">
+                <img src="images/logo.png" alt="">
+              </button> 
+
+              <button class="btn btn-ghost ">
+                
+                 
+                    <h1 class=" ">Donate Bangladesh</h1> 
+
+                 
+                </div>
+              </button>
+
+
+
+
+              <div class="navbar-end">
+                <button class="btn btn-ghost btn-circle">
+                  
+                  <img src="images/coin.png" alt="">
+  
+                </button>
+  
+                <button id="minusBalance" class="btn btn-ghost  ">
+                 
+                  5300 BDT
+  
+                </button>
+              </div>
+  
+          </div>
+
+
+
+    
+    
+  </header>
+
+  <main class="mt-13">
+
+
+    <div>
+        <h1 class="font-bold text-4xl my-3 ">Important FAQ <span><i class="fa-solid fa-comment"></i></span></h1>
+
+    </div>
+
+    <div class="join join-vertical w-full">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+          <div class="collapse-content">
+            <p>
+                What is the DOM? The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+          <div class="collapse-content">
+            <p>The getElementById() method of the Document interface returns an Element object representing the element whose id property matches the specified string. </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+          <div class="collapse-content">
+            <p>Event delegation leverages event propagation to manage events efficiently. Instead of adding event listeners to multiple child elements, you add a single event listener to a parent element. This listener takes advantage of event bubbling to handle events for its child elements.</p>
+          </div>
+        </div>
+
+
+
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>he classList object only provide methods to change the class of an element. If you want to change other attributes like id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set.</p>
+            </div>
+          </div>
+
+      </div>
+
+</body>
+</html>

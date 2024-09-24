@@ -17,6 +17,7 @@
               colors: {
                 
                 primary: 'rgba(186, 252, 100, 1)',
+                secondary:'rgba(249, 247, 243, 1)',
               }
             }
           }
@@ -32,25 +33,26 @@
         <!-- navbar start here -->
 
 
-        <div class="navbar bg-white">
+        <div class="navbar bg-[#F9F7F3] fixed top-0 z-50 backdrop-blur-sm bg-opacity-80 ">
 
 
-            <div class="navbar-start">
-                <button class="btn btn-active btn-accent">Blog</button>
+            <div class="navbar-start ">
+                
+                <a href="blog.html"><button class=" btn btn-active btn-accent">Blog</button></a>
             </div>
 
 
             <div class="navbar-center ">
               
 
-                <button class="btn  ">
+                <button class="btn hidden lg:block ">
                     <img src="images/logo.png" alt="">
                   </button> 
 
                   <button class="btn btn-ghost ">
                     
                      
-                        <h1 class=" ">Bangladesh</h1> 
+                        <h1 class=" ">Donate Bangladesh</h1> 
 
                      
                     </div>
@@ -66,9 +68,9 @@
       
                     </button>
       
-                    <button class="btn btn-ghost  ">
+                    <button id="minusBalance" class="btn btn-ghost  ">
                      
-                      <h1>5300 BDT </h2>
+                      5300 BDT
       
                     </button>
                   </div>
@@ -76,7 +78,7 @@
               </div>
 
 
-            </div>
+            
            
 
             
@@ -92,10 +94,10 @@
         <!-- double button create start here-->
 
 
-       <div class="flex  items-center justify-center mt-8 gap-4 ">
+       <div class="flex   items-center justify-center mt-20 mb-5 gap-4 ">
 
-        <button class="btn bg-primary " >Donation</button>
-        <button class="btn " tabindex="-1" role="button" aria-disabled="true">
+        <button id="donation-tab" class="btn bg-primary " >Donation</button>
+        <button id="history-tab" class="btn " tabindex="-1" role="button" aria-disabled="true">
              History
             </button>
 
@@ -104,47 +106,207 @@
          <!-- double button create ends here-->
 
 
+         <section id="card-section">
+
+        
 
          <!-- card section design start -->
 
 
-         <div class="flex items-center justify-center gap-4 shadow-2xl w-11/12 mx-auto">
 
+         <!-- Donate for Noakhali start -->
+
+         <div class="lg:flex items-center justify-center gap-4 shadow-2xl w-11/12 mx-auto">
             <div>
-                <img src="images/noakhali.png" alt="" srcset="">
+                <img  src="images/noakhali.png" alt="" srcset="">
             </div>
-
            <div>
-
-
             <div class="flex items-center ">
                 <div>
                     <img src="images/coin.png" alt="">
                 </div>
                 <div>
-                    <h2>0 BDT</h2>
+                    <h2 id="balance">0 BDT</h2>
                 </div>
             </div>
-
             <h3 class="font-semibold">Donate for Flood at Noakhali, Bangladesh</h3>
             <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-
-           <input class=" w-10/12 mx-auto " type="text" placeholder="Write Donation Amount">
-
+            <input id="money-donate" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs" />
            <br>
            
            
-           <button class="btn bg-primary w-10/12 mx-auto " >Donation Now</button>
+
+
+         
+           <button id="btn-donate" class="btn bg-primary " >Donate Now</button>
+
+
+
+           <dialog id="my_modal_1" class="modal">
+            <div class="modal-box">
+              <h3 class="text-lg font-bold">Congrats!</h3>
+
+             <img  src="images/coin.png" alt="">
+
+             <p>You have doanted for Humankind</p>
+
+             <h3 class="text-lg font-bold">Succesfully</h3>
+              <div class="modal-action">
+                <form method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn bg-primary">Close Confirmation</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
+
+
+           
+           </div>
+         </div>
+
+
+           
+
+         <!-- Donate for Noakhali ends -->
+
+
+         <!-- donate for feni start -->
+
+
+         <div class="lg:flex items-center justify-center gap-4 shadow-2xl w-11/12 mx-auto mt-6">
+            <div>
+                <img  src="images/feni.png" alt="" srcset="">
+            </div>
+           <div>
+            <div class="flex items-center ">
+                <div>
+                    <img src="images/coin.png" alt="">
+                </div>
+                <div>
+                    <h2 id="balance-1">0 BDT</h2>
+                </div>
+            </div>
+            <h3 class="font-semibold">Donate for Flood Relief in Feni,Bangladesh</h3>
+            <p> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+            <input id="money-donate-1" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs" />
+           <br>
+           
+           
+           <button id="btn-donate-1" class="btn bg-primary " >
+            
+            Donation Now</button>
+
+
+            <dialog id="my_modal_2" class="modal">
+                <div class="modal-box">
+                  <h3 class="text-lg font-bold">Congrats!</h3>
+    
+                 <img  src="images/coin.png" alt="">
+    
+                 <p>You have doanted for Humankind</p>
+    
+                 <h3 class="text-lg font-bold">Succesfully</h3>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn bg-primary">Close Confirmation</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+
 
            </div>
-
-
          </div>
+
+          
+
+
+           <!-- donate for feni end -->
+
+
+           <!-- Quota movement start  -->
+
+
+           <div class="lg:flex items-center justify-center gap-4 shadow-2xl w-11/12 mx-auto mt-6 mb-10">
+            <div>
+                <img src="images/quota-protest.png" alt="" srcset="">
+            </div>
+           <div>
+            <div class="flex items-center ">
+                <div>
+                    <img src="images/coin.png" alt="">
+                </div>
+                <div>
+                    <h2 id="balance-2">0 BDT</h2>
+                </div>
+            </div>
+            <h3 class="font-semibold">Aid for Injured in the Quota Movement</h3>
+            <p> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+            <input id="money-donate-2" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs" />
+           <br>
+           
+           
+           <button id="btn-donate-2" class="btn bg-primary">Donation Now</button>
+
+
+           <dialog id="my_modal_3" class="modal">
+            <div class="modal-box">
+              <h3 class="text-lg font-bold">Congrats!</h3>
+
+             <img  src="images/coin.png" alt="">
+
+             <p>You have donated for Humankind</p>
+
+             <h3 class="text-lg font-bold">Succesfully</h3>
+              <div class="modal-action">
+                <form method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn bg-primary">Close Confirmation</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
+
+
+
+           </div> 
+         </div>
+
+        </section>
+           
+
+            <!-- Quota movement ends  -->
 
 
         <!-- card section design end -->
 
 
+        <!-- transiction history -->
+
+        <div id="history-section" class="shadow-md rounded-md w-10/12 mx-auto border-gray-400 hidden mt-3">
+
+
+          <div id="history-container">
+
+
+          </div>
+          
+
+
+        </div>
+
+
+
     </main>
+
+    <!-- footer design -->
+
+   
+
+    
+
+    <script src="js/index.js"></script>
 </body>
 </html>
